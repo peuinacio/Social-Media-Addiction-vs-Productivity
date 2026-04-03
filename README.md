@@ -7,7 +7,7 @@ This project performs a comprehensive data science analysis to investigate the r
 The project was developed in Python, utilizing the following libraries:
 * **Data Manipulation:** `pandas`, `numpy`, `duckdb`.
 * **Visualization:** `matplotlib`, `seaborn`.
-* **Statistics & Data Quality:** `statsmodels`, `scipy.stats`, `missdat`, `missingno`.
+* **Statistics & Data Quality:** `statsmodels`, `scipy.stats`, `missdat`.
 * **Machine Learning:** `scikit-learn` (Linear Regression, Random Forest, KNNImputer, StandardScaler) and `XGBoost`.
 
 ## Dataset Overview
