@@ -7,7 +7,7 @@ Nowadays, everyone has a smartphone or a computer. A marvelous feat of technolog
 The project was developed in Python, utilizing the following libraries:
 * **Data Manipulation:** `pandas`, `numpy`, `duckdb`.
 * **Visualization:** `matplotlib`, `seaborn`.
-* **Statistics & Data Quality:** `statsmodels`, `scipy.stats`, `missdat`.
+* **Statistics & Data Quality:** `scipy.stats`, `missdat`.
 * **Machine Learning:** `scikit-learn` (Linear Regression, Random Forest, KNNImputer, StandardScaler) and `XGBoost`.
 
 ## Dataset Overview
