@@ -17,14 +17,18 @@ The analysis uses the `social_media_productivity_6000.csv` dataset, containing 6
 
 ### 1. Exploratory Data Analysis (EDA)
 * Visualized data distributions through histograms to identify normality and outliers.
+![full_data](images/full_data.png)
 * A non-parametric pattern emerged in the data, which guided all analysis and statistical tests.
+* A Spearman correlation test confirmed that age and addiction level did not correlate, while a Mann-Whitney U Test confirmed that different addiction level groups have a significantly different productivity score. 
 * Conducted segmented analysis revealing that users with "Very high screen time" (+9.5h) suffer a **55% drop in productivity** scores compared to others.
-* This productivity drop is even bigger for users with "Very high social media time" (+6h), with a **67% drop**.
+* This productivity drop is even bigger for users with "Very high social media time" (+6h), with a **67% drop**. Focus score drop was smaller, with a **10% decrease** between low and very high groups. 
 
 ![data](images/productivity_social_media_time.png)
 
+The bigger drop for users with more social media time was expected because screen time also considers productive screen time, such as work and study.
+
 * Segmented analysis also showed that even for those very high users, no correlation was found between time spent on devices and sleep or study hours. Those users are probably stealing time from other areas not mapped in the data.
-* The amount of daily notifications also does not correlate with screen time and addiction level, which was unexpected. 
+* The amount of daily notifications also does not correlate with screen time and addiction level, which was unexpected.
 
 ### 2. Data Treatment
 * **Missing Data:** Roughly 16.7% of users had missing values in their data.
