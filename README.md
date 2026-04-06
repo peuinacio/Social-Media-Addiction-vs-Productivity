@@ -53,8 +53,8 @@ Machine learning models were used for two goals: first, learning the most import
 The major errors were caused by the high variance across supports for the label groups. Medium label data had 638 users to train, while low label data had only 209. Even then, the model was successful, with only 2 major errors in a universe of 1200 test users, and a high balanced accuracy.
 
 ## Key Conclusions
-* The analysis confirms that social media addiction is directly responsible for decreased productivity.
-* Interestingly, the data suggests that high screen time does not necessarily reduce sleep or study hours in this specific dataset, indicating that it may be displacing other activities like leisure or family time, not captured in the data.
+* The analysis confirms that, at least for this dataset, social media addiction is associated with decreased productivity.
+* Interestingly, the data suggests that high screen time does not necessarily reduce sleep or study hours.
 * This opens possibilities for new data acquisition and analysis: from where does high screen time take away time? Leisure time? Family time?
 * Alternatively, the lack of correlation between screen time and study/sleep hours can be associated with the synthetic production of data in this Kaggle dataset.
 * Another consequence of this synthetic production was the target leakage verified in the addiction level classification model.
