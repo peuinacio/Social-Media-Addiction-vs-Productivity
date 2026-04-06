@@ -21,7 +21,7 @@ The analysis uses the `social_media_productivity_6000.csv` dataset, containing 6
 * Conducted segmented analysis revealing that users with "Very high screen time" (+9.5h) suffer a **55% drop in productivity** scores compared to others.
 * This productivity drop is even bigger for users with "Very high social media time" (+6h), with a **67% drop**.
 
-![data](images\productivity_social_media_time.png)
+![data](images/productivity_social_media_time.png)
 
 * Segmented analysis also showed that even for those very high users, no correlation was found between time spent on devices and sleep or study hours. Those users are probably stealing time from other areas not mapped in the data.
 * The amount of daily notifications also does not correlate with screen time and addiction level, which was unexpected. 
@@ -44,7 +44,7 @@ Machine learning models were used for two goals: first, learning the most import
 * **Target Leakage Correction:** Initial models showed near 98% accuracy due to target leakage (addiction level being calculated directly from social media hours).
 * **Final Result:** After removing the leaking feature, the models achieved a balanced and realistic accuracy of 67.11%. This result was obtained following a GridSearch optimization that failed to eliminate major errors (low addiction levels predicted as high) in our model.
 
-![Confusion](images\confusion_matrix.png)
+![Confusion](images/confusion_matrix.png)
 
 The major errors were caused by the high variance across supports for the label groups. Medium label data had 638 users to train, while low label data had only 209. Even then, the model was successful, with only 2 major errors in a universe of 1200 test users, and a high balanced accuracy.
 
