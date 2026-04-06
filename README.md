@@ -44,7 +44,7 @@ Machine learning models were used for two goals: first, learning the most import
 * **Target Leakage Correction:** Initial models showed near 98% accuracy due to target leakage (addiction level being calculated directly from social media hours).
 * **Final Result:** After removing the leaking feature, the models achieved a balanced and realistic accuracy of 67.11%. This result was obtained following a GridSearch optimization that failed to eliminate major errors (low addiction levels predicted as high) in our model.
 
-![Confusion matrix](images\confusion matrix.png)
+![Confusion](images\confusion_matrix.png)
 
 The major errors were caused by the high variance across supports for the label groups. Medium label data had 638 users to train, while low label data had only 209. Even then, the model was successful, with only 2 major errors in a universe of 1200 test users, and a high balanced accuracy.
 
