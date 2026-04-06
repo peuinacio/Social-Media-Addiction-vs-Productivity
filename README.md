@@ -56,5 +56,6 @@ The major errors were caused by the high variance across supports for the label 
 * The analysis confirms that social media addiction is directly responsible for decreased productivity.
 * Interestingly, the data suggests that high screen time does not necessarily reduce sleep or study hours in this specific dataset, indicating that it may be displacing other activities like leisure or family time, not captured in the data.
 * This opens possibilities for new data acquisition and analysis: from where does high screen time take away time? Leisure time? Family time?
-* Alternatively, the lack of correlation can be associated with the synthetic production of data in this Kaggle dataset.
+* Alternatively, the lack of correlation between screen time and study/sleep hours can be associated with the synthetic production of data in this Kaggle dataset.
 * Another consequence of this synthetic production was the target leakage verified in the addiction level classification model.
+* With target leakage fixed, an addiction level classification predictive model with over 65% accuracy was obtained.
