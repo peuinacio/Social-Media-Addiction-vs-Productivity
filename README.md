@@ -35,15 +35,15 @@ The bigger drop for users with more social media time was expected because scree
 * **MCAR test**: A non-parametric MCAR test (p-value = 0) indicated that this data were not missing at random.
 * **Imputation:** For this reason, missing values were handled using `KNNImputer` (n=5) to maintain data integrity instead of simple deletion.
 
-### 3. Machine Learning
+## Machine Learning
 Machine learning models were used for two goals: first, learning the most important elements in calculating the productivity score, which can lead to a more specific plan of action to maximize one's productivity. The second goal is to develop a model that predicts a user's addiction level using the available data. Both models were submitted to a 5-Fold Cross-Validation.
 
-## 3.1 Predicting Productivity (Regression)
+### 3.1 Predicting Productivity (Regression)
 * **Models tested**: Linear Regression, Random Forest, and XGBoost.
 * **Top Performer:** XGBoost achieved an R² of ~0.87 and an RMSE of ~9.83. This means that 87% of the variation in productivity is explained by the features (sleep and study hours, daily screen time, social media time, and the amount of notifications per day) used in the model, and that the average error when evaluating the productivity score of a user was of 9.83%.
 * **Key Insight:** A feature importance analysis together with an analysis of the correlation matrix led us to the conclusion that study hours were the strongest positive driver for productivity, while social media hours were the primary negative driver.
 
-## 3.2 Machine Learning: Addiction Level (Classification)
+### 3.2 Machine Learning: Addiction Level (Classification)
 * A classification pipeline was built to predict the user's addiction level.
 * **Target Leakage Correction:** Initial models showed near 98% accuracy due to target leakage (addiction level being calculated directly from social media hours).
 * **Final Result:** After removing the leaking feature, the models achieved a balanced and realistic accuracy of 67.11%. This result was obtained following a GridSearch optimization that failed to eliminate major errors (low addiction levels predicted as high) in our model.
